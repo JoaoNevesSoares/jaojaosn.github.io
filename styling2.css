@@ -1,0 +1,271 @@
+/* CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+/*General styling*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1920px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 3.75rem;
+    font-weight: bold;
+}
+h2{
+    font-size: 2.8125rem;
+}
+p{
+    font-size:20px;
+    line-height: 1.25rem;
+}
+
+/*Diplays gray background on located page*/
+.current{
+    background-color: #566573;
+}
+
+
+.navbar{
+    
+    background-color: #273746;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    overflow:auto;;
+}
+.navbar ul li{
+    display:block;
+}
+/*Just to set the first <li> tag to left corner*/
+.navbar ul li:first-child{
+    padding: 20px;
+    float: left;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    float: right;
+}
+.navbar li a:hover{
+    background-color: #566573/*#2C3E50*/;
+    color: #ffdaad;
+}
+#logo_wrap{
+    background-image: url(showcase.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: beige;
+    height: 500px;
+    text-align: center;
+    color: white;
+    /*position: relative;*/
+    overflow: auto;
+}
+#logo_wrap h1{
+    padding-top: 130px;
+}
+#logo_wrap h2{
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+.btn{
+    display: block;
+    background-color: #273746;
+    width:160px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+    font-weight:none; /*bold*/
+    font-size: 18px;
+
+}
+.btn:hover{
+    transition:500ms;
+    color:coral;
+}
+/* this is for making span text look like beige*/
+.color_change{
+    color:#ffdaad;
+}
+#logo_wrap span:hover{
+    color: coral !important;
+    transition: 500ms;
+}
+#hotel-image{
+    width: 50%;
+    height:480px;
+    background-image: url(photo-1.jpg);
+    float: left;
+}
+#hotel-description{
+    width: 50%;
+    background-color:#273746;
+    padding: 50px;
+    height: 480px;
+    color: white;
+    float: right;
+    text-align: center;
+}
+#hotel-description p{
+    margin-top: 30px;
+    text-align: justify;
+}
+#hotel-description a, .gleen,.gleen:hover{/*I think it's not needed to included gleen hover*/
+    text-decoration: none;
+    color:#58D68D;
+}
+.box{
+    width:33.333%;
+    height:400px;
+    float: left;
+    padding: 10px;
+    text-align: center;
+
+}
+/*usando esse seletor para
+selectionar o segundo elemento da div box*/
+.hotel-features :nth-of-type(2){
+    background-color:#ffdaad;
+}
+.hotel-features{
+    overflow: auto;
+    position:relative;
+}
+.hotel-features span{
+    font-size:60px;
+    padding-top: 50px;
+}
+.hotel-features h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size:24px;
+}
+.hotel-features p{
+    letter-spacing: 0.05em;
+    padding: 20px;
+}
+.ft-text{
+    text-align: justify;
+}
+footer{
+
+    text-align:center;
+    padding: 20px;
+    background-color: #273746;
+    color: white;
+}
+footer h4,footer h5{
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5em;
+
+}
+footer :last-child{
+    font-style: italic;
+}
+footer h5 :first-child{
+    font-size: 20px;
+}
+/*About page style*/
+#about{
+    height: 240px;
+    padding: 20px 50px 0px 50px;
+    margin-bottom: 50px;
+    text-align:left;
+}
+#about img{
+    width:300px;
+    border-radius: 100%;
+    float: right;
+}
+#about h1{
+    margin-bottom: 20px;
+
+}
+#about-main{
+    background-color:bisque;
+    background-image: url(test-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 580px;
+}
+#about-main h2{
+    color: white;
+    padding-top: 50px;
+}
+.commentary{
+    background-color:rgba(240, 178, 122,0.8);
+    overflow: auto;
+    /*margin-bottom:px!important;*/
+    margin-top: 40px!important;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.commentary p{
+    margin-top:20px;
+}
+.commentary img{
+    width: 10%;
+    border-radius:100%;
+    float: left;
+
+}
+/*Contact Page styling*/
+.container{
+    padding: 20px;
+}
+.container h1{
+    padding-bottom:10px;
+}
+.container p{
+    margin-bottom: 10px;
+}
+#contact-form label{
+    display: block;
+    margin-bottom: 5px;
+
+}
+#contact-form input,#contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+#contact-form textarea{
+    height: 200px;
+}
+#contact-form input:focus,#contact-form textarea:focus{
+    outline: none;
+    border-color: #ffdaad;
+}
+#sub-btn{
+    margin-bottom: 20px;
+    
+}
+.hotel-contact{
+    color: white!important;
+    text-align: center!important;
+}
+#two{
+    color: black;
+}
+#bix,#bix2{
+    background-color: #566573;
+}

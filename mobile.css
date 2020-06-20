@@ -1,0 +1,43 @@
+.navbar ul li a{
+    float: none;
+    display:block;
+}
+.navbar ul li{
+    float: none!important;
+    text-align: center;
+}
+#hotel-image,#hotel-description{
+    float: none;
+    width: 100%;
+    text-align:center;
+    overflow: hidden;
+    height: auto;
+}
+#logo_wrap{
+    height: auto;
+}
+.btn{
+    margin-bottom: 10px;
+}
+.box{
+    width: 100%;
+    float: none;
+    height: auto;
+}
+#about{
+    height: auto;
+    text-align: center;
+}
+#about img{
+    float: none;
+}
+.commentary img{
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 40%;
+}
+#about-main{
+    height: auto;
+    padding-bottom: 30px;
+}
